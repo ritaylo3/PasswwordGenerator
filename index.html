@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate a <br /><span id="password-title">random password</span></h1>
+            <h3>Never use an insecure password again.</h3>
+            <div class="user-inputs">
+                <div>
+                <label for="password-length">Length: <input type="number" min="5" max="22" id="password-length" value="15" onkeydown="return false"><p id="length-range">min = 5; max = 22</p></label>
+                </div>
+                <div>
+                    <label for="contains-characters">Special characters: <input type="checkbox" id="contains-characters" checked></label>
+                </div>
+            </div>
+            <div>
+                <button id="password-button">Generate Passwords</button>
+                <button id="reset-button">Reset</button>
+            </div>
+            <hr>
+            <p id="copy-text"></p>
+            <div class="passwords">
+                <span class="password-block1"><p id="password1-el"></p><br /><p id="copied-one"></p></span><span class="password-block2"><p id="password2-el"></p><br /><p id="copied-two"></p></span>
+            </div>
+        </div>
+        <script src="index.js"></script>
+
+    </body>
+</html>
